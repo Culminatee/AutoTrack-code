@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_pilih_kendaraan"
+        android:icon="@drawable/choice"
+        android:title="Kendaraan" />
+    <item
+        android:id="@+id/navigation_laporan"
+        android:icon="@drawable/report"
+        android:title="Laporan" />
+    <item
+        android:id="@+id/navigation_pengingat"
+        android:icon="@drawable/alarm"
+        android:title="Pengingat" />
+    <item
+        android:id="@+id/navigation_profil"
+        android:icon="@drawable/profile"
+        android:title="Profil" />
+</menu>
