@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+    <application
+        android:label="AutoTrack"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name="com.example.autotrack.dashboard.registrasikendaraan.KelolaKendaraanActivity" />
+        <activity android:name="com.example.autotrack.loginactivity.SignUpActivity" />
+
+        <activity android:name="com.example.autotrack.loginactivity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.autotrack.loginactivity.MainActivity" />
+        <activity android:name="com.example.autotrack.fuel.AddFuelActivity" />
+        <activity android:name="com.example.autotrack.service.ServiceActivity" />
+        <activity android:name="com.example.autotrack.dashboard.DashboardActivity" />
+        <activity android:name="com.example.autotrack.loginactivity.ResetPasswordActivity" />
+        <activity android:name="com.example.autotrack.dashboard.laporankeuangan.LaporanActivity" />
+        <activity android:name="com.example.autotrack.dashboard.notifikasi.TambahNotifikasiActivity" />
+    </application>
+
+</manifest>

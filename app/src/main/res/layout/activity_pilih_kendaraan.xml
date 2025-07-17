@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrasi Kendaraan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="9dp" />
+
+        <!-- Tipe Kendaraan -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipe Kendaraan" />
+        <Spinner
+            android:id="@+id/spinner_tipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/tipe_kendaraan"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Merk -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merk" />
+        <Spinner
+            android:id="@+id/spinner_merk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/merk_kendaraan"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Model -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model" />
+        <EditText
+            android:id="@+id/edit_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: Vario, Aerox, dll"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Nomor Plat -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomor Plat" />
+        <EditText
+            android:id="@+id/edit_plat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contoh: B 1234 ABC"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Kapasitas BBM -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kapasitas Bahan Bakar (L)" />
+        <EditText
+            android:id="@+id/edit_bbm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Contoh: 5.5"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Tombol Simpan -->
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:text="Simpan" />
+    </LinearLayout>
+</ScrollView>

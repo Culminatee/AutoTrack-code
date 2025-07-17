@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="185dp"
+    android:layout_height="wrap_content">
+
+    <!-- Kotak utama -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_white_box">
+
+        <TextView
+            android:id="@+id/tv_merk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Honda"
+            android:textStyle="bold"
+            android:textSize="29sp" />
+
+        <TextView
+            android:id="@+id/tv_tipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motor"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vario 125"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/tv_plat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B 1234 ABC"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <!-- Tombol hapus mengambang -->
+    <ImageView
+        android:id="@+id/btnDelete"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="top|end"
+        android:layout_margin="6dp"
+        android:padding="5dp"
+        android:src="@drawable/minus"
+        android:contentDescription="Hapus" />
+</FrameLayout>
